@@ -1,20 +1,11 @@
 body {
   font-family: "Roboto", sans-serif;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: space-between; */
-  /* height: 90vmax; */
-}
-
-.hero-div {
-  background-color: #1f2937;
-  color: #f9faf8;
-  font-size: 18px;
-  display: flex;
-  flex-direction: column;
 }
 
 .header {
+  background-color: #1f2937;
+  color: #f9faf8;
+  font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -36,76 +27,87 @@ a {
 }
 
 .container {
+  background-color: #1f2937;
+  color: #f9faf8;
+  font-size: 18px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   gap: 2em;
+  padding: 5em 0;
 }
 
 .container-left {
   display: flex;
   flex-direction: column;
+  /* flex-basis: 30%; */
 }
 
 .container-left h1{
   font-size: 48px;
   font-weight: bolder;
-  align-self: center;
+  margin: 0;
 }
+
 .container-left p {
-  padding: 0 1em;
+  margin: 0 auto;
+  /* text-align: start; */
 }
 
 .container-left button {
-  padding: 5px 15px;
+  padding: 10px 20px;
+  margin-top: 1em;
   border-radius: 10px;
   background-color: #3882f6;
   color: #f9faf8;
   align-self: flex-start;
 }
-.container-right {
-  display: flex;
-  padding: 1em;
-  justify-content: center;
-  background-color: violet;
-} 
+
+.container-right img {
+  min-width: 500px;
+  height: auto;
+  margin-right: 5em;
+}
 
 .info-div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
+  margin: 3rem 0;
 }
 
 .info-div header {
+  display: block;
   font-size: 36px;
   color: #1f2937;
   font-weight: bolder;
+  margin: 1rem;
 }
 
 #card-group {
   display: flex;
   /* flex: 1 1; */
   flex-direction: row;
-  /* justify-content: center; */
-  /* align-items: center; */
+  justify-content: center;
+  align-items: center;
+  padding: 0 20rem;
+  gap: 2rem;
 }
 
 .card {
-  align-self: center;
-  /* text-align: center; */
-  padding: 50px;
-}
-
-.card header {
-  font-size: 36px;
-  color: #1f2937;
-  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 10px;
+  max-width: 10rem;
 }
 
 .card img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border: #3882f6 1px solid;
   border-radius: 10px;
 }
@@ -118,9 +120,9 @@ a {
   font-style: italic;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 5% 15%;
 }
 
 .quote-div cite {
@@ -129,22 +131,32 @@ a {
   text-align: end;
 }
 
-.action-div {
-  display: flex;
+.action-div .center {
+  padding: 50px 100px;
+  margin: 100px;
+  background-color: #3882f6;
   color: #f9faf8;
-  justify-content: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
-.action-div .center {
+.action-div .text {
   display: flex;
-  flex-direction: row;
-  padding: 50px 200px;
-  margin: 50px;
-  background-color: #3882f6;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.action-div header {
   font-size: 24px;
-  /* justify-content: center; */
-  align-items: center;
+  font-weight: bolder;
+}
+
+.action-div p {
+  margin: 0;
+  color: #f9faf8;
 }
 
 .action-div button {
@@ -154,12 +166,15 @@ a {
   border-radius: 10px;
   font-size: 24px;
   margin: 20px;
-  padding: 5px 15px;
+  padding: 0.5rem 4rem;
 }
 
 footer {
   background-color: #1f2937;
   color: #f9faf8;
+  font-size: 18px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
 }
